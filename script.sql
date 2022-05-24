@@ -14,11 +14,11 @@ select * from categories;
 select * from products;
 select * from productorders;
 select * from orders;
+delete  from brands;
+show create table users;
 
-show create table attributeoptions;
-
-insert into Users(id,type,login,phone,password, fullName, createdAt, updatedAt) 
-values(1,'admin','admin', +375447372894,'$2b$04$6InQij02ZYSfwHTrEnpqI.qbZPUcH6.roP3WFyRQeudGSMS1dFZIK','admin','2022-05-16 23:33:05','2022-05-16 23:30:05');
+insert into users(type,login,phone,password, fullName, createdAt, updatedAt) 
+values('admin','admin', 111111111,'$2b$04$6InQij02ZYSfwHTrEnpqI.qbZPUcH6.roP3WFyRQeudGSMS1dFZIK','admin','2022-05-16 23:33:05','2022-05-16 23:30:05');
 CREATE TABLE Users ( 
    id INT NOT NULL,
    type VARCHAR(255) NOT NULL,
